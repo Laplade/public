@@ -12,7 +12,7 @@
 編集画面
 ![編集画面](https://raw.githubusercontent.com/Laplade/public/main/storage/blog/QZ2EdZQWMRru2KaQt8x2/編集.png "編集画面")
 
-以下は投稿時のコードの一部抜粋です。
+以下は投稿時のコードの一部抜粋です。post した時に html へ変換しているのがわかると思います。
 
 ```js
   const postOnClick = async () => {
@@ -82,9 +82,25 @@
 
 ## お問い合わせ機能
 
-お問い合わせ機能ではメール送信を実装しています。その際に使用したのが Trigger Email from Firestore というものです。
+お問い合わせではメール送信を実装しています。その際に使用したのが Trigger Email from Firestore というものです。
 
 ![Trigger Email from Firestore](https://raw.githubusercontent.com/Laplade/public/main/storage/blog/QZ2EdZQWMRru2KaQt8x2/TriggerEmailFromFirestore.png "Trigger Email from Firestore")
+
+この拡張機能を使うと Firestore に登録するだけでメールが送信されます。
+
+```js
+const sendOnClick = async () => {
+  const mailData = {
+    to: "xxx@yyyy.zzz",
+    message: {
+      subject: "ブログへのお問い合わせ",
+      text: `name:${textList[0]}\nmail:${textList[1]}\ntitle:${textList[2]}\nmessage:${textList[3]}`,
+    },
+  };
+  await addDoc(collection(firebase.firestore, `mail`), mailData);
+  navigate(`/contact`, { state: { sent: true } });
+};
+```
 
 ## 参考サイト
 
