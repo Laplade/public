@@ -14,7 +14,7 @@
 **編集画面**
 ![編集画面](https://raw.githubusercontent.com/Laplade/public/main/storage/blog/QZ2EdZQWMRru2KaQt8x2/編集.png "編集画面")
 
-以下は投稿時のコードの抜粋です。post した時に html へ変換や目次の作成をしているのがわかると思います。
+以下は投稿時のコードの抜粋です。post した時に html へ変換や目次の作成をしているのがわかると思います。認証には Firebase の Authentication を利用しています。
 
 ```js
   const postOnClick = async () => {
