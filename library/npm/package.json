@@ -1,0 +1,37 @@
+{
+  "name": "laplade",
+  "version": "0.1.51",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "lint": "eslint --fix --ext .jsx,.js,.tsx,.ts ./src/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Laplade",
+  "license": "MIT",
+  "files": [
+    "package.json",
+    "README.md",
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.1",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "eslint": "^8.42.0",
+    "eslint-plugin-react": "^7.32.2",
+    "firebase": "^9.22.2",
+    "react-firebase-hooks": "^5.1.1",
+    "rollup": "^3.25.1",
+    "rollup-plugin-dts": "^5.3.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tslib": "^2.5.3",
+    "typescript": "^5.1.3"
+  }
+}
