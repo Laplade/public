@@ -88,7 +88,7 @@
 
 ## 参考サイト
 
-参考にしたサイトは数え切れないので特に参考にしたサイトを掲載します。
+参考にしたサイトは数え切れないので特に重要なサイトを掲載します。
 
 [React Hooks と TypeScript でつくる Todo PWA ~ 入門 React ハンズオン](https://zenn.dev/sprout2000/books/76a279bb90c3f3)
 
