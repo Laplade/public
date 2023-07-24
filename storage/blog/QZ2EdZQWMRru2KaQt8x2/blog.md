@@ -16,7 +16,7 @@
 
 ```js
   const postOnClick = async () => {
-    const markdown = textList[2].replaceAll("\n", "\\n"); // Firebaseには「\n」を使用できない
+    const markdown = textList[2].replaceAll("\n", "%n"); // Firebaseには「\n」を使用できない
 
     const html = await unified()
       .use(remarkParse)
