@@ -4,9 +4,13 @@
 
 ## 機能紹介
 
+### 基本機能
+
+本サイトを見てもらえばわかることですが、目次の作成、ページネーション、カテゴリー表示、イメージの挿入などの基本的な機能は実装されています。フッター部のソーシャルへのリンクは実装していません。見栄えが良いのでつけただけです(笑)。
+
 ### 投稿機能
 
-本サイトを見てもらえることからわかることですが、目次の作成、ページネーション、イメージの挿入などの基本的な機能は実装されています。このブログの特徴として少しでも早くなるようにマークダウンの投稿時点で HTML に変換しています。画像の保管箇所には GitHub を利用しています。
+このブログの特徴として少しでも表示が早くなるようにマークダウンの投稿時点で HTML に変換しています。画像の保管箇所には GitHub を利用しています。
 
 **新規作成画面**
 ![新規作成画面](https://raw.githubusercontent.com/Laplade/public/main/storage/blog/QZ2EdZQWMRru2KaQt8x2/新規作成.png "新規作成画面")
@@ -86,7 +90,8 @@
 
 ![Trigger Email from Firestore](https://raw.githubusercontent.com/Laplade/public/main/storage/blog/QZ2EdZQWMRru2KaQt8x2/TriggerEmailFromFirestore.png "Trigger Email from Firestore")
 
-この拡張機能を使うと Firestore に登録するだけでメールが送信されます。
+この拡張機能を使うと Firestore に登録するだけでメールを送信することができます。
+以下は送信ボタン押下時のコードの抜粋です。
 
 ```js
 const sendOnClick = async () => {
