@@ -23,7 +23,6 @@
       .use(remarkParse)
       .use(remarkGfm)
       .use(remarkRehype)
-      .use(customCode)
       .use(rehypeHighlight)
       .use(rehypeSlug)
       .use(rehypeStringify)
