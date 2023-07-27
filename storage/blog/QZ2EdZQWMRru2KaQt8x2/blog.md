@@ -115,6 +115,6 @@ const sendOnClick = async () => {
 
 参考にしたサイトは数え切れません。特に重要なサイトを以下に掲載します。
 
-[React Hooks と TypeScript でつくる Todo PWA ~ 入門 React ハンズオン](https://zenn.dev/sprout2000/books/76a279bb90c3f3)
+[React Hooks と TypeScript でつくる Todo PWA ~ 入門 React ハンズオン](Cardhttps://zenn.dev/sprout2000/books/76a279bb90c3f3)
 
-[Next.js を利用した初めての本格的 Markdown ブログサイトの構築](https://reffect.co.jp/react/nextjs-markdown-blog)
+[Next.js を利用した初めての本格的 Markdown ブログサイトの構築](Cardhttps://reffect.co.jp/react/nextjs-markdown-blog)
